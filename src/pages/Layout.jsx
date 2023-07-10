@@ -1,3 +1,5 @@
+import Timeline from "../components/Timeline";
+
 const Layout = () => {
   return (
     <>
@@ -46,31 +48,16 @@ const Layout = () => {
                   <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
                   <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                 </svg>
-                <span className="ml-3">Dashboard</span>
+                <span className="ml-3">New Feeds</span>
               </a>
             </li>
-            {/* ... Rest of the list items */}
           </ul>
         </div>
       </aside>
 
       <div className="p-4 sm:ml-64">
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-          <div className="grid grid-cols-3 gap-4 mb-4">
-            {/* ... Rest of the grid content */}
-          </div>
-          <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            {/* ... Icon content */}
-          </div>
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            {/* ... Rest of the grid content */}
-          </div>
-          <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            {/* ... Icon content */}
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {/* ... Rest of the grid content */}
-          </div>
+          <Timeline />
         </div>
       </div>
     </>
